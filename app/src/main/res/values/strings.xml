@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NetworkMode Tile</string>
+    <string name="tile_name">Network Modes</string>
+</resources>
