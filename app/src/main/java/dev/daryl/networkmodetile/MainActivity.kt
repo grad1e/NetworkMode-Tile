@@ -47,6 +47,8 @@ class MainActivity : ComponentActivity() {
             }
         } else {
             Log.i(TAG, "addTileToQS: not supported by OS")
+            Toast.makeText(this, "Not supported by OS", Toast.LENGTH_SHORT).show()
+            finish()
         }
     }
 
