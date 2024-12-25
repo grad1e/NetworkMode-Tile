@@ -8,7 +8,6 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
-import androidx.compose.ui.res.stringResource
 
 
 class MainActivity : ComponentActivity() {

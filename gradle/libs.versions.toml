@@ -1,14 +1,8 @@
 [versions]
-agp = "8.6.1"  # Added Android Gradle Plugin version
+activity-ktx = "1.9.3"
+agp = "8.6.1"
 kotlin = "2.1.0"
-compose-compiler = "1.5.12"  # Added from build.gradle.kts
-compose-bom = "2024.12.01"
-android-core-ktx = "1.15.0"
-lifecycle-runtime-ktx = "2.8.7"
-activity-compose = "1.9.3"
-junit = "4.13.2"
-androidx-junit = "1.2.1"
-espresso-core = "3.6.1"
+runtime = "1.7.6"
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -17,18 +11,6 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
 [libraries]
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity-ktx" }
+androidx-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "runtime" }
 kotlin-bom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin" }
-android-core-ktx = { module = "androidx.core:core-ktx", version.ref = "android-core-ktx" }
-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
-compose-ui = { module = "androidx.compose.ui:ui" }
-compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
-material3 = { module = "androidx.compose.material3:material3" }
-junit = { module = "junit:junit", version.ref = "junit" }
-androidx-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-junit" }
-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
-compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
